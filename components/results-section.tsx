@@ -2,25 +2,26 @@
 
 import { useEffect, useRef, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Star, Quote } from "lucide-react"
+import { Star, Quote } from 'lucide-react'
+import { VideoCarousel } from "@/components/video-carousel"
 
 const testimonials = [
   {
-    name: "Maria Silva",
-    company: "E-commerce Fashion",
-    text: "A Focus Marketing Digital transformou completamente nossa presença online. Em 6 meses, aumentamos nossas vendas em 250% e nosso ROI nunca foi tão alto!",
+    name: "Bruno Ricardo",
+    company: "Empresa de contabilidade",
+    text: "O trabalho da Focus é incrível! As campanhas são bem estruturadas e sempre com relatórios claros, o que nos dá confiança no investimento. Recomendo para qualquer profissional que queira crescer no digital com estratégia.",
     rating: 5,
   },
   {
-    name: "João Santos",
-    company: "Clínica Médica",
-    text: "Profissionais extremamente competentes e dedicados. As campanhas de tráfego pago trouxeram pacientes qualificados e nossa agenda está sempre cheia.",
+    name: "Gabriel Borges",
+    company: "Auto center Gomes",
+    text: "Antes da Focus, a gente investia em anúncios sem retorno real. Agora, com as campanhas bem segmentadas no Instagram e Facebook, o movimento da oficina aumentou muito! Dá pra ver a diferença no faturamento mês a mês.",
     rating: 5,
   },
   {
-    name: "Ana Costa",
-    company: "Restaurante Gourmet",
-    text: "O trabalho de gestão de redes sociais foi excepcional. Nossa comunidade cresceu 400% e o engajamento está incrível. Recomendo muito!",
+    name: "Danilo Santana",
+    company: "Expertise Contábil",
+    text: "A parceria com a Focus transformou totalmente a presença digital da nossa contabilidade. Hoje, atraímos clientes qualificados de forma constante e conseguimos resultados que antes pareciam distantes. O atendimento é ágil e a equipe realmente entende o nosso negócio!",
     rating: 5,
   },
 ]
@@ -82,6 +83,15 @@ export function ResultsSection() {
               <div className="text-5xl font-bold text-secondary mb-2">+150</div>
               <div className="text-white/70">Clientes Ativos</div>
             </div>
+          </div>
+
+          {/* Video Carousel */}
+          <div className="mb-20 py-12">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-white mb-4">Nossos Vídeos em Destaque</h3>
+              <div className="w-16 h-1 bg-secondary mx-auto" />
+            </div>
+            <VideoCarousel />
           </div>
 
           {/* Testimonials */}

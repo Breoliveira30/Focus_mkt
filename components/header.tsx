@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu, X } from 'lucide-react'
 import Link from "next/link"
 import Image from "next/image"
 
@@ -21,7 +21,6 @@ export function Header() {
   const menuItems = [
     { label: "Início", href: "#inicio" },
     { label: "Serviços", href: "#servicos" },
-    { label: "Portfólio", href: "#portfolio" },
     { label: "Depoimentos", href: "#depoimentos" },
     { label: "Contato", href: "#contato" },
   ]
@@ -32,12 +31,11 @@ export function Header() {
         isScrolled ? "bg-primary/95 backdrop-blur-sm shadow-lg" : "bg-primary/80 backdrop-blur-sm"
       }`}
     >
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-16 sm:h-20">
-          {/* Logo */}
-          <Link href="#inicio" className="flex items-center space-x-2 sm:space-x-3">
-            {/* Desktop Logo */}
-            <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary p-1 overflow-hidden hidden sm:block">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16 lg:h-20">
+          {/* Logo - Desktop */}
+          <Link href="#inicio" className="hidden lg:flex items-center space-x-3">
+            <div className="relative w-12 h-12 rounded-full bg-primary p-1 overflow-hidden">
               <Image
                 src="/images/logo.png"
                 alt="Focus Marketing Digital Logo"
@@ -45,49 +43,43 @@ export function Header() {
                 className="object-contain rounded-full"
               />
             </div>
-            <span className="text-white font-bold text-lg sm:text-xl hidden sm:inline">Focus Marketing Digital</span>
-
-            <div className="flex items-center gap-1 sm:hidden">
-              <span className="text-white font-bold text-xl">F</span>
-              <div className="relative w-7 h-7 rounded-full overflow-hidden bg-primary flex-shrink-0">
-                <Image src="/images/logo.png" alt="Focus Logo" fill className="object-cover rounded-full" />
-              </div>
-              <span className="text-white font-bold text-xl">CUS</span>
-            </div>
+            <span className="text-white font-bold text-xl">Focus Marketing Digital</span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
+          {/* Logo - Mobile */}
+          <Link href="#inicio" className="flex lg:hidden items-center gap-1">
+            <span className="text-white font-bold text-xl">F</span>
+            <div className="relative w-7 h-7 rounded-full overflow-hidden bg-primary flex-shrink-0">
+              <Image src="/images/logo.png" alt="Focus Logo" fill className="object-cover rounded-full" />
+            </div>
+            <span className="text-white font-bold text-xl">CUS</span>
+          </Link>
+
+          {/* Desktop Navigation - Only visible on lg screens */}
+          <nav className="hidden lg:flex items-center space-x-8">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-white hover:text-secondary transition-colors duration-200 text-sm lg:text-base"
+                className="text-white hover:text-secondary transition-colors duration-200 text-base"
               >
                 {item.label}
               </Link>
             ))}
-          </nav>
-
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button
-              asChild
-              className="bg-secondary text-primary hover:bg-secondary/90 font-semibold text-sm lg:text-base"
-            >
+            <Button className="bg-secondary text-primary hover:bg-secondary/90 font-semibold">
               <Link href="#contato">Fale com um Especialista</Link>
             </Button>
-          </div>
+          </nav>
 
-          {/* Mobile Menu Button */}
-          <button className="md:hidden text-white p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+          {/* Mobile Menu Button - Only visible below lg screens */}
+          <button className="lg:hidden text-white p-2 ml-auto" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - Only visible below lg screens */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-white/10">
+          <div className="lg:hidden py-4 border-t border-white/10">
             <nav className="flex flex-col space-y-3">
               {menuItems.map((item) => (
                 <Link

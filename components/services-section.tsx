@@ -7,14 +7,10 @@ import { Card, CardContent } from "@/components/ui/card"
 const services = [
   {
     icon: Megaphone,
-    title: "Gestão de Tráfego Pago",
-    description: "Campanhas otimizadas no Google Ads e Meta Ads para maximizar seu ROI e atrair clientes qualificados.",
+    title: "Grupo Meta ads",
+    description: "Campanhas otimizadas no Meta Ads (Instagram e Facebook) para aumentar seu alcance e atrair clientes qualificados.",
   },
-  {
-    icon: Globe,
-    title: "Criação de Sites e Landing Pages",
-    description: "Desenvolvimento de sites modernos, responsivos e otimizados para conversão e experiência do usuário.",
-  },
+ 
   {
     icon: Share2,
     title: "Gestão de Redes Sociais",

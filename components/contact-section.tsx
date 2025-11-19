@@ -155,14 +155,7 @@ ${formData.message}`
                 </form>
 
                 <div className="mt-6">
-                  <Button
-                    onClick={handleWhatsApp}
-                    variant="outline"
-                    className="w-full border-secondary text-secondary hover:bg-secondary hover:text-primary font-semibold text-lg py-6 bg-transparent"
-                  >
-                    <Phone className="mr-2" size={20} />
-                    Falar com um especialista agora
-                  </Button>
+                  
                 </div>
               </CardContent>
             </Card>
