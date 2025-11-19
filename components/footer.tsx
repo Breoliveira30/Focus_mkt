@@ -8,11 +8,16 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Logo and Description */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold text-xl">F</span>
+            <div className="flex items-center space-x-0 mb-4">
+              <span className="text-white font-bold text-xl mr-1">F</span>
+              <div className="w-6 h-6 rounded-full overflow-hidden flex items-center justify-center flex-shrink-0">
+                <img
+                  src="/images/logo.png"
+                  alt="Focus Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <span className="text-white font-bold text-xl">Focus Marketing Digital</span>
+              <span className="text-white font-bold text-xl ml-1">OCUS</span>
             </div>
             <p className="text-white/70 mb-4 max-w-md">
               Transformando presença digital em resultados reais através de estratégias inteligentes e orientadas por
@@ -82,6 +87,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="border-t border-white/10 pt-8 text-center text-white/60">
           <p>&copy; {new Date().getFullYear()} Focus Marketing Digital. Todos os direitos reservados.</p>
+          <p>Desenvolvido por DevDuo — contato: devduo.solution@gmail.com</p>
         </div>
       </div>
     </footer>

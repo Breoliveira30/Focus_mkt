@@ -68,7 +68,7 @@ export function ResultsSection() {
           {/* Metrics */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 max-w-5xl mx-auto">
             <div className="text-center">
-              <div className="text-5xl font-bold text-secondary mb-2">+200</div>
+              <div className="text-5xl font-bold text-secondary mb-2">+100</div>
               <div className="text-white/70">Campanhas Otimizadas</div>
             </div>
             <div className="text-center">
@@ -80,7 +80,7 @@ export function ResultsSection() {
               <div className="text-white/70">Satisfação</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-secondary mb-2">+150</div>
+              <div className="text-5xl font-bold text-secondary mb-2">+30</div>
               <div className="text-white/70">Clientes Ativos</div>
             </div>
           </div>

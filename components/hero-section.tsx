@@ -82,7 +82,7 @@ export function HeroSection() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-12 sm:mt-16 md:mt-20 max-w-3xl mx-auto">
             <div className="text-center backdrop-blur-sm bg-white/10 rounded-lg p-4 sm:p-6">
               <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary mb-1 sm:mb-2 drop-shadow-lg">
-                +200
+                +100
               </div>
               <div className="text-white/90 drop-shadow-md text-xs sm:text-sm md:text-base">Campanhas Otimizadas</div>
             </div>
