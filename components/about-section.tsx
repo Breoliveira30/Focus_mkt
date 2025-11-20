@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import { Target, TrendingUp, Users } from "lucide-react"
+import { ImageCarousel } from "./image-carousel"
 
 export function AboutSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -24,6 +25,24 @@ export function AboutSection() {
     return () => observer.disconnect()
   }, [])
 
+  const aboutImages = [
+    {
+      id: "1",
+      src: "/equipe-focus-marketing-digital-trabalhando.jpg",
+      alt: "Equipe Focus Marketing Digital",
+    },
+    {
+      id: "2",
+      src: "/estrategia-marketing-digital.jpg",
+      alt: "Estratégia de Marketing",
+    },
+    {
+      id: "3",
+      src: "/analise-de-dados-marketing.jpg",
+      alt: "Análise de Dados",
+    },
+  ]
+
   return (
     <section ref={sectionRef} className="py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -37,9 +56,7 @@ export function AboutSection() {
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Nosso Propósito</h2>
             <div className="w-20 h-1 bg-secondary mx-auto mb-8" />
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-              Mais que uma agência, somos um time focado no crescimento do seu negócio. 
-              Na Focus, cada estratégia tem um propósito: fazer sua marca atingir o alvo certo. 
-              Nada de achismos — tudo é planejado com foco, análise e estratégia para gerar resultados reais.
+             Mais que uma agência, somos um time focado no crescimento do seu negócio. Na Focus, cada estratégia tem um propósito: fazer sua marca atingir o alvo certo. Nada de achismos — tudo é planejado com foco, análise e estratégia para gerar resultados reais.
             </p>
           </div>
 
@@ -47,14 +64,7 @@ export function AboutSection() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Image */}
             <div className="relative">
-              <div className="aspect-square rounded-2xl overflow-hidden bg-muted">
-                <img
-                  src="/marketing-team-collaboration.png"
-                  alt="Equipe Focus Marketing Digital"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary rounded-2xl opacity-20" />
+              <ImageCarousel images={aboutImages} />
             </div>
 
             {/* Values */}

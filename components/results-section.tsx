@@ -2,8 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Star, Quote } from 'lucide-react'
-import { VideoCarousel } from "@/components/video-carousel"
+import { Star, Quote } from "lucide-react"
 
 const testimonials = [
   {
@@ -83,15 +82,6 @@ export function ResultsSection() {
               <div className="text-5xl font-bold text-secondary mb-2">+30</div>
               <div className="text-white/70">Clientes Ativos</div>
             </div>
-          </div>
-
-          {/* Video Carousel */}
-          <div className="mb-20 py-12">
-            <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold text-white mb-4">Nossos Vídeos em Destaque</h3>
-              <div className="w-16 h-1 bg-secondary mx-auto" />
-            </div>
-            <VideoCarousel />
           </div>
 
           {/* Testimonials */}
