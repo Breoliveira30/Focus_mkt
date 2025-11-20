@@ -28,17 +28,17 @@ export function AboutSection() {
   const aboutImages = [
     {
       id: "1",
-      src: "/equipe-focus-marketing-digital-trabalhando.jpg",
+      src: "/images/img_fundo.png",
       alt: "Equipe Focus Marketing Digital",
     },
     {
       id: "2",
-      src: "/estrategia-marketing-digital.jpg",
+      src: "/images/img_fundo1.png",
       alt: "Estratégia de Marketing",
     },
     {
       id: "3",
-      src: "/analise-de-dados-marketing.jpg",
+      src: "/images/logo.png",
       alt: "Análise de Dados",
     },
   ]
