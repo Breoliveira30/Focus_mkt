@@ -17,7 +17,7 @@ export function Footer() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="text-white font-bold text-xl ml-1">OCUS</span>
+              <span className="text-white font-bold text-xl ml-1">CUS</span>
             </div>
             <p className="text-white/70 mb-4 max-w-md">
               Transformando presença digital em resultados reais através de estratégias inteligentes e orientadas por
