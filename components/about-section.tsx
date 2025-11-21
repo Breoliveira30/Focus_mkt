@@ -28,12 +28,12 @@ export function AboutSection() {
   const aboutImages = [
     {
       id: "1",
-      src: "/images/img_fundo.png",
+      src: "/images/img_equipe.JPG",
       alt: "Equipe Focus Marketing Digital",
     },
     {
       id: "2",
-      src: "/images/img_fundo1.png",
+      src: "/images/img_fundo.png",
       alt: "Estratégia de Marketing",
     },
     {
