@@ -31,16 +31,7 @@ export function AboutSection() {
       src: "/images/img_equipe.JPG",
       alt: "Equipe Focus Marketing Digital",
     },
-    {
-      id: "2",
-      src: "/images/img_fundo.png",
-      alt: "Estratégia de Marketing",
-    },
-    {
-      id: "3",
-      src: "/images/logo.png",
-      alt: "Análise de Dados",
-    },
+    
   ]
 
   return (
