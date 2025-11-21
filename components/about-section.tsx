@@ -26,9 +26,10 @@ export function AboutSection() {
   }, [])
 
   const aboutImages = [
-    {
+    
+     {
       id: "1",
-      src: "/images/img_equipe.JPG",
+      src: "/images/img_focus.png",
       alt: "Equipe Focus Marketing Digital",
     },
     
