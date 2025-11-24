@@ -14,13 +14,19 @@ const testimonials = [
   {
     name: "Gabriel Borges",
     company: "Auto center Gomes",
-    text: "Antes da Focus, a gente investia em anúncios sem retorno real. Agora, com as campanhas bem segmentadas no Instagram e Facebook, o movimento da oficina aumentou muito! Dá pra ver a diferença no faturamento mês a mês.",
+    text: "Antes da Focus, tinha uma grande resistência com serviços de marketing. Mas hoje, tenho uma visão ampla com relação a importância da agência dentro da nossa empresa, tanto em posicionamento digital, quanto em campanhas bem segmentadas. Uma equipe de sucesso e confiança!",
     rating: 5,
   },
   {
     name: "Danilo Santana",
     company: "Expertise Contábil",
     text: "A parceria com a Focus transformou totalmente a presença digital da nossa contabilidade. Hoje, atraímos clientes qualificados de forma constante e conseguimos resultados que antes pareciam distantes. O atendimento é ágil e a equipe realmente entende o nosso negócio!",
+    rating: 5,
+  },
+   {
+    name: "Valmir Gomes",
+    company: "Inovari Recrutamento",
+    text: "O trabalho da Focus é essencial para o crescimento e posicionamento da Inovari. Parabéns a toda a equipe pela dedicação a nossa empresa. ",
     rating: 5,
   },
 ]
