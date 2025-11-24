@@ -34,7 +34,7 @@ export function AboutSection() {
     },
     {
       id: "2",
-      src: "/images/team_focus.jpg",
+      src: "/images/team_focus.JPG",
       alt: "Equipe Focus Marketing Digital",
     },
     

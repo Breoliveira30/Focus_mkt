@@ -8,14 +8,14 @@ const teamMembers = [
     position: "Fundadora e CEO da Focus Marketing Digital",
     description:
       "Ana é a fundadora da Focus Marketing Digital, atualmente finalizando o ensino superior em Publicidade e Propaganda. Na empresa, atua como estrategista principal, sendo responsável pelo desenvolvimento, planejamento e execução das estratégias de marketing que impulsionam resultados reais para os clientes.\n\nTambém é especialista em edição de vídeos, unindo criatividade, técnica e visão analítica para transformar conteúdos em peças de alto impacto.",
-    image: "/images/ana_maria.jpg",
+    image: "/images/ana_maria.JPG",
   },
   {
     name: "Izadora Aurélio",
     position: "CEO e Sócia da Focus Marketing Digital",
     description:
       "Izadora é CEO e sócia da Focus Marketing Digital. Formada em Design Gráfico, atua como especialista em análise de resultados, garantindo a interpretação estratégica dos dados e decisões orientadas por performance que elevam o impacto das campanhas.\n\nCom um olhar técnico e apurado para design e métricas, Izadora contribui para o crescimento dos clientes e para a evolução contínua da Focus, unindo estética, estratégia e resultados de forma precisa e eficiente.",
-    image: "/images/izadora.jpg",
+    image: "/images/izadora.JPG",
   },
 ]
 
