@@ -6,21 +6,15 @@ import { Star, Quote } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Bruno Ricardo",
-    company: "Empresa de contabilidade",
-    text: "O trabalho da Focus é incrível! As campanhas são bem estruturadas e sempre com relatórios claros, o que nos dá confiança no investimento. Recomendo para qualquer profissional que queira crescer no digital com estratégia.",
-    rating: 5,
-  },
-  {
-    name: "Gabriel Borges",
-    company: "Auto center Gomes",
-    text: "Antes da Focus, tinha uma grande resistência com serviços de marketing. Mas hoje, tenho uma visão ampla com relação a importância da agência dentro da nossa empresa, tanto em posicionamento digital, quanto em campanhas bem segmentadas. Uma equipe de sucesso e confiança!",
-    rating: 5,
-  },
-  {
     name: "Danilo Santana",
     company: "Expertise Contábil",
     text: "A parceria com a Focus transformou totalmente a presença digital da nossa contabilidade. Hoje, atraímos clientes qualificados de forma constante e conseguimos resultados que antes pareciam distantes. O atendimento é ágil e a equipe realmente entende o nosso negócio!",
+    rating: 5,
+  },
+   {
+    name: "Gabriel Borges",
+    company: "Auto center Gomes",
+    text: "Antes da Focus, tinha uma grande resistência com serviços de marketing. Mas hoje, tenho uma visão ampla com relação a importância da agência dentro da nossa empresa, tanto em posicionamento digital, quanto em campanhas bem segmentadas. Uma equipe de sucesso e confiança!",
     rating: 5,
   },
    {
@@ -28,7 +22,14 @@ const testimonials = [
     company: "Inovari Recrutamento",
     text: "O trabalho da Focus é essencial para o crescimento e posicionamento da Inovari. Parabéns a toda a equipe pela dedicação a nossa empresa. ",
     rating: 5,
+  },	
+   {
+    name: "Bruno Ricardo",
+    company: "Empresa de contabilidade",
+    text: "O trabalho da equipe é incrível! O acompanhamento das campanhas, e relatórios que a agência entrega é o que nos dá confiança no investimento. Indico 100% para profissionais que queiram crescer e ter uma estrutura no digital.",
+    rating: 5,
   },
+
 ]
 
 export function ResultsSection() {

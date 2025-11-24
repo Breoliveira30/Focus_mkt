@@ -38,7 +38,7 @@ export function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    const message = `Olá! Meu nome é ${formData.name}.
+    const message = `Olá! tudo bem ? Meu nome é ${formData.name}.
 
 *E-mail:* ${formData.email}
 *WhatsApp:* ${formData.phone}
