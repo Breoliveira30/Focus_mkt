@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from 'lucide-react'
+import { Menu, X } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -32,10 +32,10 @@ export function Header() {
         isScrolled ? "bg-primary/95 backdrop-blur-sm shadow-lg" : "bg-primary/80 backdrop-blur-sm"
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="w-full px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo - Desktop */}
-          <Link href="#inicio" className="hidden lg:flex items-center space-x-3">
+          {/* Logo - Desktop - Left side */}
+          <Link href="#inicio" className="hidden lg:flex items-center space-x-3 flex-shrink-0">
             <div className="relative w-12 h-12 rounded-full bg-primary p-1 overflow-hidden">
               <Image
                 src="/images/logo.png"
@@ -48,7 +48,7 @@ export function Header() {
           </Link>
 
           {/* Logo - Mobile */}
-          <Link href="#inicio" className="flex lg:hidden items-center gap-1">
+          <Link href="#inicio" className="flex lg:hidden items-center gap-1 flex-shrink-0">
             <span className="text-white font-bold text-xl">F</span>
             <div className="relative w-7 h-7 rounded-full overflow-hidden bg-primary flex-shrink-0">
               <Image src="/images/logo.png" alt="Focus Logo" fill className="object-cover rounded-full" />
@@ -56,23 +56,27 @@ export function Header() {
             <span className="text-white font-bold text-xl">CUS</span>
           </Link>
 
-          {/* Desktop Navigation - Only visible on lg screens */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          {/* Desktop Navigation - Centered */}
+          <nav className="hidden lg:flex items-center space-x-8 flex-1 justify-center">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-white hover:text-secondary transition-colors duration-200 text-base"
+                className="text-white hover:text-secondary transition-colors duration-200 text-base whitespace-nowrap"
               >
                 {item.label}
               </Link>
             ))}
+          </nav>
+
+          {/* CTA Button - Desktop Right side */}
+          <div className="hidden lg:flex flex-shrink-0">
             <Button className="bg-secondary text-primary hover:bg-secondary/90 font-semibold">
               <Link href="#contato">Fale com um Especialista</Link>
             </Button>
-          </nav>
+          </div>
 
-          {/* Mobile Menu Button - Only visible below lg screens */}
+          {/* Mobile Menu Button */}
           <button className="lg:hidden text-white p-2 ml-auto" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
