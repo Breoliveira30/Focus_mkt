@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Instagram, Linkedin, Mail } from "lucide-react"
+import { Instagram, Linkedin, Mail, Facebook } from "lucide-react"
 
 export function Footer() {
   return (
@@ -45,7 +45,7 @@ export function Footer() {
                   Serviços
                 </Link>
               </li>
-  
+
               <li>
                 <Link href="#depoimentos" className="text-white/70 hover:text-secondary transition-colors">
                   Depoimentos

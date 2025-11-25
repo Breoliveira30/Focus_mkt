@@ -17,7 +17,7 @@ export function HeroSection() {
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0 hidden md:block">
         <Image
-          src="/images/img_fundo1.png"
+          src="/images/logo_fc.png"
           alt="Focus Marketing Digital Background"
           fill
           className="object-cover"

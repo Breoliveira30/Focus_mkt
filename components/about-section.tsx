@@ -53,7 +53,7 @@ export function AboutSection() {
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Nosso Propósito</h2>
             <div className="w-20 h-1 bg-secondary mx-auto mb-8" />
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-             Mais que uma agência, somos um time focado no crescimento do seu negócio. Na Focus, cada estratégia tem um propósito: fazer sua marca atingir o alvo certo. Nada de achismos — tudo é planejado com foco, análise e estratégia para gerar resultados reais.
+             Mais que uma agência, somos um time focado no crescimento do seu negócio. Na Focus, cada estratégia tem um propósito: fazer sua marca atingir o alvo certo. Nada de achismos tudo é planejado com foco, análise e estratégia para gerar resultados reais.
             </p>
           </div>
 
