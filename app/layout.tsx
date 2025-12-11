@@ -12,27 +12,22 @@ export const metadata: Metadata = {
   keywords:
     "marketing digital, tráfego pago, google ads, meta ads, criação de sites, gestão de redes sociais, branding, SEO",
   icons: {
-  icon: [
-    { url: "/favicon-32x32.png", sizes: "32x32" },
-    { url: "/favicon-16x16.png", sizes: "16x16" },
-  ],
-    }
+    icon: "/favicon-32x32.png", // ✅ Favicon circular
+  },
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <head>
-        {/* Favicons */}
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-
-        {/* Outros links adicionais que você já tinha */}
+        {/* Garante compatibilidade extra com alguns navegadores */}
         <link rel="icon" href="/favicon-32x32.png" type="image/png" />
       </head>
-
       <body className={inter.className}>{children}</body>
     </html>
   )
 }
-
